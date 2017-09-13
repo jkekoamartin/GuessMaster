@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "847038279104",
+    "firebase_url": "https://guessmaster-24651.firebaseio.com",
+    "project_id": "guessmaster-24651",
+    "storage_bucket": "guessmaster-24651.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847038279104:android:9d51a3c0ace460cc",
+        "android_client_info": {
+          "package_name": "org.example.james.guessmaster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847038279104-27uasdoo93pn602vv2brj0i51932mcnf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.example.james.guessmaster",
+            "certificate_hash": "171C51C82CFEA778D6CEA2A8B81E57C9FD45DCCA"
+          }
+        },
+        {
+          "client_id": "847038279104-ndq6ks20gledihpvmsqnljfo9hpha854.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2n39PNMTiRM0mq4ASvm_h7wyBEeRbpWc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847038279104-ndq6ks20gledihpvmsqnljfo9hpha854.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
