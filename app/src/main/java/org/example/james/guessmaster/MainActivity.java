@@ -105,8 +105,12 @@ public class MainActivity extends AppCompatActivity {
     public void win(){
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
         alertDialogBuilder.setTitle("I win!");
-        alertDialogBuilder.setMessage("Aha! I guessed your number in " + gamer.totalNumGuesses()
-                + " guesses!");
+        if(gamer.totalNumGuesses() == 1){
+            alertDialogBuilder.setMessage("Aha! I guessed your number in 1 guess! How lucky?");
+        } else {
+            alertDialogBuilder.setMessage("Aha! I guessed your number in " + gamer
+                    .totalNumGuesses() + " guesses!");
+        }
         alertDialogBuilder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface arg0, int arg1) {
@@ -118,8 +122,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void error(){
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setMessage("I dont think your number exists.\nOr maybe you input the " +
-                "wrong number of matches...\n\n " +
+        alertDialogBuilder.setMessage("I dont think your number exists.\nOr maybe you input the wrong number of matches...\n\n " +
                 "Try again?");
         alertDialogBuilder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
             @Override
@@ -157,7 +160,12 @@ public class MainActivity extends AppCompatActivity {
 
         TextView textView = (TextView) findViewById(R.id.textView2);
         String updating  = textView.getText().toString();
-        textView.setText(updating + "\n" + game + " completed in " + score + " guesses");
+        if(score == 1){
+            textView.setText(updating + "\n" + game + " completed in 1 guess");
+        } else {
+            textView.setText(updating + "\n" + game + " completed in " + score + " guesses");
+        }
+
 
     }
 
